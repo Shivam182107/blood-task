@@ -1,0 +1,278 @@
+const DonorsData = [
+  {
+    Name: "Sritam Das",
+    age: 25,
+    weight: 70,
+    bloodgroup: "B+",
+    phone: "+91 9876xxxxxx",
+    state: "Odisha",
+    city: "Cuttack",
+    country: "India",
+    location: { lat: 20.3700, lng: 85.8904 }
+  },
+  {
+    Name: "Priya Mohanty",
+    age: 22,
+    weight: 55,
+    bloodgroup: "A+",
+    phone: "+91 9123xxxxxx",
+    state: "Odisha",
+    city: "Bhubaneswar",
+    country: "India",
+    location: { lat: 20.2961, lng: 85.8245 }
+  },
+  {
+    Name: "Rajan Patra",
+    age: 30,
+    weight: 80,
+    bloodgroup: "O+",
+    phone: "+91 9345xxxxxx",
+    state: "Odisha",
+    city: "Puri",
+    country: "India",
+    location: { lat: 19.8135, lng: 85.8312 }
+  },
+  {
+    Name: "Anita Nayak",
+    age: 28,
+    weight: 62,
+    bloodgroup: "AB+",
+    phone: "+91 9456xxxxxx",
+    state: "Odisha",
+    city: "Rourkela",
+    country: "India",
+    location: { lat: 22.2604, lng: 84.8536 }
+  },
+  {
+    Name: "Suresh Behera",
+    age: 35,
+    weight: 75,
+    bloodgroup: "B-",
+    phone: "+91 9567xxxxxx",
+    state: "Odisha",
+    city: "Sambalpur",
+    country: "India",
+    location: { lat: 21.4669, lng: 83.9756 }
+  },
+  {
+    Name: "Deepika Sahoo",
+    age: 24,
+    weight: 58,
+    bloodgroup: "A-",
+    phone: "+91 9678xxxxxx",
+    state: "Odisha",
+    city: "Berhampur",
+    country: "India",
+    location: { lat: 19.3150, lng: 84.7941 }
+  },
+  {
+    Name: "Manoj Jena",
+    age: 32,
+    weight: 85,
+    bloodgroup: "O-",
+    phone: "+91 9789xxxxxx",
+    state: "Odisha",
+    city: "Balasore",
+    country: "India",
+    location: { lat: 21.4942, lng: 86.9317 }
+  },
+  {
+    Name: "Sunita Dash",
+    age: 27,
+    weight: 60,
+    bloodgroup: "AB-",
+    phone: "+91 9890xxxxxx",
+    state: "Odisha",
+    city: "Baripada",
+    country: "India",
+    location: { lat: 21.9320, lng: 86.7285 }
+  },
+  {
+    Name: "Bikash Pradhan",
+    age: 29,
+    weight: 72,
+    bloodgroup: "B+",
+    phone: "+91 9901xxxxxx",
+    state: "Odisha",
+    city: "Brahmapur",
+    country: "India",
+    location: { lat: 19.3084, lng: 84.8013 }
+  },
+  {
+    Name: "Kavita Mishra",
+    age: 23,
+    weight: 53,
+    bloodgroup: "A+",
+    phone: "+91 9012xxxxxx",
+    state: "Odisha",
+    city: "Koraput",
+    country: "India",
+    location: { lat: 18.8135, lng: 82.7110 }
+  },
+  {
+    Name: "Tapan Swain",
+    age: 40,
+    weight: 90,
+    bloodgroup: "O+",
+    phone: "+91 8901xxxxxx",
+    state: "Odisha",
+    city: "Jharsuguda",
+    country: "India",
+    location: { lat: 21.8553, lng: 84.0063 }
+  },
+  {
+    Name: "Lipika Kar",
+    age: 26,
+    weight: 57,
+    bloodgroup: "B+",
+    phone: "+91 8812xxxxxx",
+    state: "Odisha",
+    city: "Kendrapara",
+    country: "India",
+    location: { lat: 20.5018, lng: 86.4231 }
+  },
+  {
+    Name: "Niranjan Sethy",
+    age: 33,
+    weight: 78,
+    bloodgroup: "AB+",
+    phone: "+91 8723xxxxxx",
+    state: "Odisha",
+    city: "Dhenkanal",
+    country: "India",
+    location: { lat: 20.6525, lng: 85.5983 }
+  },
+  {
+    Name: "Pallavi Rout",
+    age: 21,
+    weight: 50,
+    bloodgroup: "A-",
+    phone: "+91 8634xxxxxx",
+    state: "Odisha",
+    city: "Phulbani",
+    country: "India",
+    location: { lat: 20.4786, lng: 84.2313 }
+  },
+  {
+    Name: "Subrat Mallick",
+    age: 38,
+    weight: 83,
+    bloodgroup: "O+",
+    phone: "+91 8545xxxxxx",
+    state: "Odisha",
+    city: "Keonjhar",
+    country: "India",
+    location: { lat: 21.6288, lng: 85.5810 }
+  },
+  {
+    Name: "Rashmita Parida",
+    age: 31,
+    weight: 65,
+    bloodgroup: "B-",
+    phone: "+91 8456xxxxxx",
+    state: "Odisha",
+    city: "Angul",
+    country: "India",
+    location: { lat: 20.8400, lng: 85.1010 }
+  },
+  {
+    Name: "Debasis Tripathy",
+    age: 36,
+    weight: 77,
+    bloodgroup: "A+",
+    phone: "+91 8367xxxxxx",
+    state: "Odisha",
+    city: "Boudh",
+    country: "India",
+    location: { lat: 20.8390, lng: 84.3239 }
+  },
+  {
+    Name: "Monalisa Sahu",
+    age: 20,
+    weight: 48,
+    bloodgroup: "O-",
+    phone: "+91 8278xxxxxx",
+    state: "Odisha",
+    city: "Nayagarh",
+    country: "India",
+    location: { lat: 20.1290, lng: 85.0946 }
+  },
+  {
+    Name: "Prakash Biswal",
+    age: 45,
+    weight: 88,
+    bloodgroup: "AB+",
+    phone: "+91 8189xxxxxx",
+    state: "Odisha",
+    city: "Bhadrak",
+    country: "India",
+    location: { lat: 21.0548, lng: 86.4958 }
+  },
+  {
+    Name: "Sasmita Lenka",
+    age: 29,
+    weight: 61,
+    bloodgroup: "A+",
+    phone: "+91 8090xxxxxx",
+    state: "Odisha",
+    city: "Rayagada",
+    country: "India",
+    location: { lat: 19.1700, lng: 83.4100 }
+  },{
+    Name: "Akash Mohanty",
+    age: 27,
+    weight: 73,
+    bloodgroup: "B+",
+    phone: "+91 7012345678",
+    state: "Odisha",
+    city: "Bhubaneswar",
+    country: "India",
+    location: { lat: 20.3010, lng: 85.8195 }
+  },
+  {
+    Name: "Sneha Pattnaik",
+    age: 23,
+    weight: 54,
+    bloodgroup: "B+",
+    phone: "+91 7112345678",
+    state: "Odisha",
+    city: "Bhubaneswar",
+    country: "India",
+    location: { lat: 20.2680, lng: 85.8400 }
+  },
+  {
+    Name: "Rohan Satpathy",
+    age: 31,
+    weight: 79,
+    bloodgroup: "O+",
+    phone: "+91 7212345678",
+    state: "Odisha",
+    city: "Bhubaneswar",
+    country: "India",
+    location: { lat: 20.3150, lng: 85.8050 }
+  },
+  {
+    Name: "Tanushree Kar",
+    age: 25,
+    weight: 56,
+    bloodgroup: "AB+",
+    phone: "+91 7312345678",
+    state: "Odisha",
+    city: "Bhubaneswar",
+    country: "India",
+    location: { lat: 20.2850, lng: 85.8350 }
+  },
+  {
+    Name: "Sourav Nanda",
+    age: 34,
+    weight: 82,
+    bloodgroup: "B-",
+    phone: "+91 7412345678",
+    state: "Odisha",
+    city: "Bhubaneswar",
+    country: "India",
+    location: { lat: 20.2750, lng: 85.8150 }
+  },
+];
+
+export default DonorsData;
