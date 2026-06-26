@@ -29,13 +29,14 @@ const ReceiverForm = () => {
   };
 
   const handleSearch = () => {
-    const filtered = DonorsData.filter(
+   try {
+     const filtered = DonorsData.filter(
       (val) =>
         val.city.toLowerCase() === ReceiverFormData.city.toLowerCase() &&
         val.bloodgroup.toLowerCase() === ReceiverFormData.bloodGroup.toLowerCase()
         // val.bloodgroup.toLowerCase() === ReceiverFormData.bloodGroup.toLowerCase()
     );
-
+    console.log(filtered)
     setDonors(filtered);
 
     if (location) {
@@ -43,6 +44,9 @@ const ReceiverForm = () => {
     }
 
     navigate("/donorlist");
+   } catch (error) {
+    console.log(error)
+   }
   };
  
 

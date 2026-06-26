@@ -44,7 +44,7 @@ const SearchedDonor = () => {
       bounds.extend([User.lng, User.lat]);
 
       Donors.forEach((donor) => {
-        // console.log("Adding Donor Marker", donor.location.lng, donor.location.lat);
+        // console.log("addding donor marker", donor.location.lng, donor.location.lat);
         
         new mapboxgl.Marker({ color: "#e53935" })
           .setLngLat([donor.location.lng, donor.location.lat])
@@ -68,11 +68,7 @@ const SearchedDonor = () => {
     return () => mapRef.current?.remove();
   }, [User, Donors]);
 
-  useEffect(() => {
-    if (!User?.lat || !User?.lng || Donors.length === 0) {
-      navigate("/");
-    }
-  }, [User, Donors, navigate]);
+ 
 
   return (
     <div className="flex flex-col md:flex-row h-screen w-full bg-[#0a0a0a]">

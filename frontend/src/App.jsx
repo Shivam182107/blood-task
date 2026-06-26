@@ -6,8 +6,8 @@ import ReceiverForm from "./pages/ReceiverForm";
 
 function App() {
   return (
-    <div className="w-full h-screen flex flex-col">
-      <Navabar />
+    <div className="w-full h-[100dvh] flex flex-col">
+      {/* <Navabar /> */}
       <div className="flex-1 overflow-y-auto">
         <Routes>
           <Route path="/" element={<ReceiverForm />} />
