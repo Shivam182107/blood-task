@@ -68,7 +68,6 @@ const SearchedDonor = () => {
     return () => mapRef.current?.remove();
   }, [User, Donors]);
 
- 
 
   return (
     <div className="flex flex-col md:flex-row h-screen w-full bg-[#0a0a0a]">
